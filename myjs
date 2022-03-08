@@ -1,0 +1,16 @@
+//// Get last character ////
+function getLastCharacter(name) {
+    return name[name.length - 1];
+    // alternatively:
+    // return name.slice(-1);
+}
+function getLastCharacter(name) {
+ let z = name.charAt(name.length-1);
+ return z;
+}
+
+///////////Skip character////////////
+function skipFirstCharacter(text) {
+    return text.substring(1)
+}
+console.log(skipFirstCharacter("Xcode")); // "code"
