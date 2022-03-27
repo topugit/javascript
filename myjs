@@ -46,3 +46,15 @@ function getCapitalized(name) {
 
 }
 
+//Complete the function getDescription such that it returns the first 10 characters of the text parameter it receives followed by an ellipsis.
+An ellipsis is the dot character written 3 times: ...
+function getDescription(text) {
+    text = text.slice(0,10);
+    console.log(text+"..."); // write something in the BROWSER and see it in the console
+   // if (text.length > 10) {
+    //    return text.substring(0, 10) + "...";
+   // }
+  //  return text;
+
+}
+
