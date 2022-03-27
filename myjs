@@ -58,3 +58,18 @@ function getDescription(text) {
 
 }
 
+// even or odd number
+//Always use triple equals (===) when comparing 2 values in JavaScript.
+function evenOrOdd(number) {
+    if (number % 2 === 0) {
+        return "even";
+    }
+    return "odd";
+}
+
+function getEmptyArray() {
+    // const users = [];
+    // return users;
+        return [];
+}
+
