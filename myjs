@@ -73,3 +73,20 @@ function getEmptyArray() {
         return [];
 }
 
+// html code in javascript
+
+function getDropdown(countries) {
+    let html = `<option value="">Please select</option>`;
+    countries.forEach(function(country) {
+        html += `<option value="${country.toLowerCase()}">${country}</option>`;
+    });
+    return html;
+}
+
+// filter in array... get lowest temparature
+function getFreezingTemperatures(temperatures) {
+    let temp = temperatures.filter(function (temperature){
+        return temperature <= 0 ;
+    });
+    return temp;
+}
