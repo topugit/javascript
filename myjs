@@ -82,6 +82,17 @@ function getDropdown(countries) {
     });
     return html;
 }
+// sum items of an array
+function sumGrades(grades) {
+    let sum = 0;
+    grades.forEach(function(grade) {
+        sum = sum + grade;
+        // or
+        // sum += grade
+    });
+    return sum;
+}
+
 
 // filter in array... get lowest temparature
 function getFreezingTemperatures(temperatures) {
