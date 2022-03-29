@@ -90,3 +90,18 @@ function getFreezingTemperatures(temperatures) {
     });
     return temp;
 }
+
+//  transform / change an array data into another one
+const numbers = [4, 2, 5, 8]; // const names = ["sam", "Alex"];
+const doubled = numbers.map(function(number) {
+    return number * 2; // return name.toUpperCase();
+});
+console.log(doubled); 
+Output: [8, 4, 10, 16]
+Output: ["SAM", "ALEX"]
+
+// Is item in array?
+function isAppUsed(apps, app) {
+  return (apps.includes(app));
+}
+Output: true or False
