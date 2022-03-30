@@ -116,3 +116,33 @@ function isAppUsed(apps, app) {
   return (apps.includes(app));
 }
 Output: true or False
+
+//********* Object codes ***********//
+
+Complete the function getWeather such that it returns the string:
+It's currently X degrees in Y
+Where X is replaced by the value and Y is replaced by the city name. These values are provided as a city parameter which is an object.
+
+function getWeather(city) {
+   return `It's currently ${city.value} degrees in ${city.name}`;
+}
+Input: console.log(getWeather({name: "Amsterdam", value: 3}));
+Output: "It's currently 3 degrees in Amsterdam"
+
+//html table
+function renderTableRow(details) {
+    return `<tr>
+        <td>${details.title}</td>
+        <td>${details.value}g</td>
+    </tr>`
+}
+
+
+// Arrow Function
+ const sum = function(a, b) {
+    return a + b;
+}
+//can be replaced or rewritten by arrow function, arrow function must have / starts with parameter
+const sum = (a, b) => {
+    return a + b;
+}
