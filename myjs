@@ -33,6 +33,20 @@ function getLastChar(name) {
 function getLower(name) {
     // name all in lower case (example: "ABC" becomes "abc")
     return name.toLowerCase();
+    
+    
+// trim string
+const getEmail = email => {
+    return email.trim();
+}
+
+// endsWith(".") checks if the string ends with "."
+getMessage = message => {
+    if (message.endsWith(".")) {
+        return message;
+    }
+    return message + ".";
+}
 }
 
 function getUpper(name) {
