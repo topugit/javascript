@@ -96,6 +96,7 @@ function getDropdown(countries) {
     });
     return html;
 }
+********************* Array Codes *********************
 // sum items of an array
 function sumGrades(grades) {
     let sum = 0;
@@ -132,6 +133,18 @@ function isAppUsed(apps, app) {
 }
 Output: true or False
 
+// Delete all array items
+const resetApps = apps => {
+    return apps.length = 0 ;
+}
+
+// remove items form array
+const removeFirstApp = apps => {
+     apps.splice(0,1); or apps.splice(1,1);
+    return apps;
+}
+input: apps = ["Calculator", "Whatsapp", "Chrome", "Firefox"]
+Output:  console.log(removeSecondApp(apps)); // ["Calculator", "Chrome", "Firefox"]
 //********* Object codes ***********//
 
 Complete the function getWeather such that it returns the string:
