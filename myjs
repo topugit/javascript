@@ -118,7 +118,8 @@ function getFreezingTemperatures(temperatures) {
 
 //  transform / change an array data into another one
 const numbers = [4, 2, 5, 8]; // const names = ["sam", "Alex"];
-const doubled = numbers.map(function(number) {
+const doubled = numbers.
+(function(number) {
     return number * 2; // return name.toUpperCase();
 });
 console.log(doubled); 
@@ -160,3 +161,17 @@ function renderTableRow(details) {
 const sum = (a, b) => {
     return a + b;
 }
+***************************************************
+// Find string in a string. 
+getUnit = text => {
+    if (text.includes("°C")) {
+        return "Celsius";
+    } else if (text.includes("°F")) {
+        return "Fahrenheit";
+    } else {
+        return "N/A";
+    }
+}
+//console.log(getUnit("It is 15°C today")); // Celsius
+//console.log(getUnit("It was 90°F yesterday")); // Fahrenheit
+************************************************
