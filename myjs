@@ -107,7 +107,11 @@ function sumGrades(grades) {
     });
     return sum;
 }
-
+// sum array using reduce
+let sum = numbers.reduce((total, current) => {
+    return total + current
+}, 0) // 1 for multiplication
+input: console.log(sumNumbers([10, 20, 30])) // 60
 
 // filter in array... get lowest temparature
 function getFreezingTemperatures(temperatures) {
